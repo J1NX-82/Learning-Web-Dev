@@ -1,0 +1,172 @@
+<!-- tables in depth -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+</head>
+<body>
+    <!-- rowspan and colspan fills the rows and columns of desired data -->
+    <p><h3>1st Table Creation</h3></p>
+    <table border="5">
+        <thead>
+            <th>Student ID </th>
+            <th>Name</th>
+            <th>Gender </th>
+            <th>Age </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Lugia</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Sweata</td>
+                <td>Female</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Insanity</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Rahul</td>
+                <td>Male</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><h3>2nd Table Creation</h3></p>
+    <table border="3">
+        <thead>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <thead>Column 3</th>
+        </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Row1 Cell1</td>
+                    <td>Row1 Cell2</td>
+                    <td>Row1 Cell3</td>
+                </tr>
+                <tr>
+                    <td>Row2 Cell2</td>
+                    <td>Row2 Cell3</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Row3 Cell1</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><h3>3rd Table Creation</h3></p>
+        <table border="3">
+            <thead>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Type</th>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+                <td rowspan="4">Company Founder</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+                
+                </tr>
+                <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1000</td>
+                
+                </tr>
+                <tr>
+                <td>4</td>
+                <td>Mark Zuckerberg</td>
+                <td>Founder Facebook</td>
+                <td>$1200</td>
+                
+                </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>$4400</td>
+            </tr>
+            </tfoot>
+            </table>
+    
+            <p><h3>4th Table Creation</h3></p>
+            <table border="1" align="center" cellpadding="10px">
+                <thead>
+                    <tr>
+                        <th rowspan="3">Day</th>
+                        <th colspan="3">Seminar</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Schedule</th>
+                        <th rowspan="2">Topic</th>
+                    </tr>
+                    <tr>
+                        <th>Begin</th>
+                        <th>End</th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Monday</td>
+                        <td rowspan="2">8:00 a.m</td>
+                        <td rowspan="2">5:00 p.m</td>
+                        <td>Introduction to XML</td>
+                    </tr>
+                    <tr>
+                        <td>Validity: DTD and Relax NG</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">Tuesday</td>
+                        <td>8:00 a.m</td>
+                        <td>11:00 a.m</td>
+                        <td rowspan="2">XPath</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">11:00 a.m</td>
+                        <td rowspan="2">2:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">XSL transformation</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 p.m</td>
+                        <td>5:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>8:00 a.m</td>
+                        <td>12:00 p.m</td>
+                        <td>XLS Formatting Objects</td>
+                    </tr>
+        
+                </tbody>
+            </table>
+        
+        </body>
+        </html>
+            </table>
+    </body>
+    </html>
