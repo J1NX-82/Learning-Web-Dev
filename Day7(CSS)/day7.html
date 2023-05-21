@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+</head>
+<!-- External CSS -->
+<link rel="stylesheet" href="styling.css">
+<!-- Internal CSS -->
+<style>
+    /* element selector */
+   
+    h1{
+        background-color: aqua;
+    }
+    table{
+        border: 10px solid rgb(126, 35, 35);
+    }
+    
+    /* class selector
+    to select an html element by its class, a period(.) must be prepended to the class name */
+    .green{
+        color: green;
+    }
+    .blue{
+        color: blue;
+    }
+    .small{
+        font-size: small;
+    }
+    .larger{
+        font-size: larger;
+    }
+    
+    /* ID selector
+    to select an html element by its ID, a hash(#) must be prepended to the id name */
+    /* #lol{
+        color: blue;
+    } */
+    /* Pseudoclass selector */
+    button{
+        width: 10em;
+        height: 5ex;
+        background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover{
+        color: greenyellow;
+    }
+
+    a:hover{
+        color: green;
+    }
+
+    .lmao:hover{
+        color: black;
+    }
+
+    #vyr:hover{
+        color: blueviolet;
+    }
+
+    </style>
+<body>
+    <a class="lmao" id="vyr" href="htps://www.google.com">GOOGLE</a>
+    <p class="green">Hey there, folks</p>
+    <p class="green">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium vitae excepturi voluptas porro necessitatibus itaque tempore consequatur eos laboriosam neque.</p>
+    <p class="blue">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum deserunt ullam eligendi nobis voluptas laboriosam optio voluptatibus, ad cupiditate et!</p>
+    
+    <h1 class="small">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+    <h2 class="small">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+    <h3 class="small">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+    <h4 class="larger">Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
+    <h5 class="larger">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+    <h6 class="larger">Lorem ipsum dolor sit amet, consectetur adipisicing.</h6>
+    
+    <!-- inline css -->
+    <p style="background-color: #fc894d;"> This is my first paragraph  </p>
+    <!-- xD -->
+    <p> This is my second paragraph </p>
+    <h1> This is a HEADING</h1>
+    <h1> This is a another HEADING</h1>
+    <table border="3">
+        <thead>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <thead>Column 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Row1 Cell1</td>
+                <td>Row1 Cell2</td>
+                <td>Row1 Cell3</td>
+                </tr>
+                <tr>
+                    <td>Row2 Cell2</td>
+                    <td>Row2 Cell3</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Row3 Cell1</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+
+        <button id="lol">SUBMIT</button>
+    </body>
+    </html>
