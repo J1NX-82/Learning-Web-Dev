@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day5-Forms</title>
+</head>
+<body>
+    <!-- forms and input tags are used to make forms  -->
+    <!-- "for" attribute of label tag and "id" attribute of input tag should be same  -->
+    
+    <fieldset>
+        <legend>Credentials:</legend>
+    <form action="">
+        <label for="email">Enter e-mail id</label>
+        <input type="email" name="" id="email" placeholder="abc@example.com">
+        <br/>
+        <br/>
+        <label for="password">Enter password</label>
+        <input type="password" name="" id="password" placeholder="Enter a strong passsword" >
+        <br/>
+        <input type="submit" value="Submit">
+        <!-- another way of creating button <button></button -->
+            <!-- <button>Submit here</button> -->
+        <!-- placeholder = greyish fainted text in forms to give clarity to user -->
+
+    </form>
+</fieldset>
+<br/>
+<fieldset>
+    <legend>Pet-Select</legend>
+    <label for="pet-select">Choose a pet:</label>
+ 
+<select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+</select><br/>
+<label for="avatar">Upload a picture:</label>
+
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+
+</fieldset>
+
+<br/>
+
+<fieldset>
+    <legend> Choose a date: </legend>
+    <form>
+        <label for="date">Enter your DOB</label>
+        <input type="date" name="" id="date" min="2018-01-01" max="2018-12-31">
+        <input type="reset" value="Reset">
+        <button>Submit</button>
+
+    </form>
+</fieldset>
+<br/>
+<textarea name="text" id="" cols="50" rows="10" placeholder="Enter a brief description about yourself"></textarea>
+<br/>
+<!-- To make a single selection name attribute is added -->
+<fieldset>
+    <legend>Gender:</legend>
+    <form>
+    
+        <input type="radio" id="Male" name="Gender">
+        <label for="Male">Male</label>
+        
+        <br/>
+       
+        <input type="radio" id="Female" name="Gender">
+        <label for="Female">Female</label>
+        
+        <br/>
+        
+        <input type="radio" id="other" name="Gender">
+        <label for="other">Prefer not to say</label>
+        
+    </form>
+</fieldset>
+</body>
+</html>
