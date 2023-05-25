@@ -1,0 +1,11 @@
+.box{
+    max-height: 150px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.newbox{
+    min-height: 100px;
+    margin: 4px;
+    border: 1px solid black;
+}
