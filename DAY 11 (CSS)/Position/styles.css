@@ -1,0 +1,28 @@
+div{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+.wrapper{
+    height: 1000px;
+    width: 1000px;
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+#box1{
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+#box3{
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+#box5{
+    position: sticky;
+    top: 0px;
+}
