@@ -1,0 +1,37 @@
+h2{
+    font-family: 'Rubik Puddles', cursive;
+    font-size: xx-large;
+    font: rgba(66, 176, 86, 0.513);
+}
+p{
+    /* font-style:italic; */
+    font-size:20px;
+    font-family:cursive;
+    font-weight: 400;
+    line-height: 30px;
+}
+/* 
+ !!using RGB
+*/
+#firstpara{
+    background-color: rgb(100, 109, 192);
+}
+/* 
+ !!using RGBA ( A = transparency)
+*/
+
+#secondpara{
+    background-color: rgba(66, 176, 86, 0.513);
+}
+/* 
+ !!using HEXADECIMAL values (first 2 digits = Red ; second 2 digits = Green ; last 2 digits = Blue)
+*/
+#thirdpara{
+    background-color: #ffaa2b;
+}
+/* 
+!!using HSL color 
+*/
+#fourpara{
+    background-color: hsl(20, 30, 50);
+}
