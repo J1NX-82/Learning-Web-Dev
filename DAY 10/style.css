@@ -1,4 +1,28 @@
+/* 
+    !!ELEMENT SELECTOR
+*/
 h1{
     font: xx-large;
     text-align: center;
+}
+
+/* 
+    !!ID SELECTOR
+*/
+#lol{
+    font: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: skyblue;
+}
+/* 
+    !!CLASS SELECTOR
+*/
+.para{
+    color: rebeccapurple;
+}
+/* 
+    !!GROUP SELECTOR
+*/
+p,h1{
+    color: blueviolet;
 }
