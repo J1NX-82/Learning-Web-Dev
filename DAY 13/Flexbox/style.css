@@ -1,0 +1,89 @@
+/* 
+    *FLEX-ITEM PROPERTIES
+        !order(controls the arrangement of items front/back )
+        !flex-grow (default value = 0)
+        !flex-shrink(controls the shrinking speed of one object wrt other)[default value=1]
+        !flex-basis(width increases with increase in content (no trimming occurs)
+        !flex(shorthand notation for order,flex-grow,flex-shrink,flex-basis){
+            *syntax = flex order flex-grow flex-shrink flex-basis
+            eg = flex 2 1 3 120px
+        }
+        !align-self(aligns a single object irrespective of others)
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 300px;
+    border: 2px solid green;
+    
+    /*  
+    ??flexbox by default aligns object in main axis(horizontal)
+    *flex-direction is used to alter or change the default axis to vertical(column)...
+    *flex-wrap preserves the content dimensions if viewed in another viewport...
+    flex-direction: row;
+    flex-wrap: wrap; 
+    shorthand notation for both flex wrap and direction ------>(flex-flow)
+    */
+
+    /* flex-flow: row wrap;  */
+    
+    /* 
+    justify-content attribute alligns items in MAIN AXIS
+    */
+
+    justify-content: center;
+
+    /* 
+    align-items attribute alligns items in CROSS AXIS
+    */
+
+    align-items: center;
+
+    /* 
+    gap attributes provides spacing between the objects in respective rows/column...
+    */
+    
+    gap: 100px;
+
+    /* 
+    align-content controls SPACING between all rows or its alignment
+    */
+
+    align-content: space-between;
+}
+.box{
+    border: 1px solid  brown;
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+    /* difference between flex basis and normal width attribute is that 
+    *in flex-basis, width increases with increase in content (no trimming occurs)
+    *in normal width, width remains constricted and doesn't increase(trimming of new contents occurs) 
+    */
+    flex-basis: 100px;
+    width: 100px;
+    background-color: lightpink;
+}
+
+#box1{
+    order: 5;
+    align-self: stretch;
+}
+
+#box3{
+    order: 6;
+    align-self: flex-end;
+}
+
+#box4{
+    align-self: flex-start;
+}
+
+#box2{
+    align-self: center;
+}
